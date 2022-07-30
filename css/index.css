@@ -1630,6 +1630,8 @@ li a{
 
 @media only screen and ( min-width:992px){
 
+
+
     body{
         background-image: linear-gradient(rgb(74, 183, 237),rgb(202, 232, 191));
        
@@ -1729,7 +1731,9 @@ li a{
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-   
+        
+
+
     #main_img{
         grid-area:m2;
         height: 100%;
@@ -1747,7 +1751,29 @@ li a{
         flex-direction:column;
         justify-self: center;
         align-self: center;
-    }   
+        animation-name: colores ;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+     
+    @keyframes colores{
+
+        0%{
+            background-color: rgb(202, 232, 191);
+        }
+        
+        50%{
+            background-color: rgb(53, 14, 172);
+        }
+       
+        100%{
+            background-color: white;
+        }
+    
+    
+    }
+    
+
     #tarjeta2{
         grid-area:m5;
         height: 80%;
@@ -1768,7 +1794,9 @@ li a{
         flex-direction:column;
         justify-self: center;
         align-self: center;
-       
+        animation-name: colores ;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
     }
     
         
@@ -1799,6 +1827,7 @@ li a{
         grid-area:footer;
         display: flex;
         justify-content:center;
+        
         height: 50%;
         align-self:center;
         border-top: 5px double black; 
@@ -1844,7 +1873,7 @@ li a{
         align-self: center;
         margin-top: 15px;
         
-    }
+        }
    
     #nav_contacto{
         grid-area: n2;  
@@ -1953,8 +1982,7 @@ li a{
     }
 
     
-    #body_imagenes{
-        background-image: linear-gradient(rgb(74, 183, 237),rgb(17, 5, 81));
+    #body_imagenes{background-image: linear-gradient(rgb(74, 183, 237),rgb(17, 5, 81));
         
     }
        
@@ -1992,7 +2020,7 @@ li a{
         align-self: center;
         margin-top: 10px;
         
-    }
+        }
    
     #nav_imagenes{
         grid-area: n2;  
@@ -2066,7 +2094,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador1_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
 
     #main_img2_imagenes{
@@ -2075,7 +2105,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
 
     #main_img3_imagenes{
@@ -2084,7 +2116,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
 
    
@@ -2108,7 +2142,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador1_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
     #main_img5_imagenes{
         grid-area:m13;
@@ -2116,7 +2152,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
 
     #main_img6_imagenes{
@@ -2125,14 +2163,42 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador_imagenes;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
    
+    
+    @keyframes rotador_imagenes{
 
+        from{
+        
+            transform: rotateY(0deg);
+        }
+
+        to{
+        
+            transform: rotateY(180deg);
+        }
+    }
+
+    @keyframes rotador1_imagenes{
+
+        from{
+        
+            transform: rotateX(0deg);
+        }
+
+        to{
+        
+            transform: rotateX(60deg);
+        }
+    }
     #footer_imagenes{
         grid-area:footer;
         display: flex;
         justify-content:center;
+        
         height: 100%;
         align-self:center;
         border-top: 5px double black; 
@@ -2141,9 +2207,12 @@ li a{
 
     #body_ubicacion{
         background-image: linear-gradient(rgb(74, 183, 237),rgb(234, 149, 218))
-      
+        
+       
     }   
+    
   
+    
     #grilla_ubicacion{
 
         display:grid;
@@ -2177,7 +2246,7 @@ li a{
         justify-self: center;
         align-self: center;
         margin-top: 10px;
-    }
+        }
    
     #nav_ubicacion{
         grid-area: n2;  
@@ -2300,7 +2369,7 @@ li a{
         align-self: center;
         margin-top: 10px;
         
-    }
+        }
    
     #nav_tipos{
         grid-area: n2;  
@@ -2406,7 +2475,9 @@ li a{
         display: flex;
         justify-content: center;
         align-content: center;
-       
+        animation-name: rotador;
+        animation-duration: 15s;
+        animation-iteration-count: 3;
     }
 
     #main_temporada_3_tipos{
@@ -2421,7 +2492,18 @@ li a{
         flex-direction:column;
     }
     
-    
+    @keyframes rotador{
+
+        from{
+        
+            transform:rotateY(0deg);
+        }
+
+        to{
+        
+            transform:rotateY(360deg);
+        }
+    } 
     
     #footer_tipos{
         grid-area:footer;
